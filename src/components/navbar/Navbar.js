@@ -3,9 +3,9 @@ import {FaBars, FaTimes} from 'react-icons/fa'
 import { BiSearch } from 'react-icons/bi';
 import {IconContext} from 'react-icons/lib'
 import {Nav, NavLogo, LogoLink, NavContent, NavItems, NavMobile, NavLink,
-        NavButton, NavButtonLink, NavSearchHolder} from './Navbar.styled'
+        NavButton, NavButtonLink, NavSearchHolder, NavItemsInner} from './Navbar.styled'
 import Logo from '../../images/kingCabanaLogo.svg'
-import { Link } from "react-router-dom";
+import { NavGroup } from './Navbar.styled';
 
 
 
@@ -45,16 +45,18 @@ const Navbar = () => {
           {click ? <FaTimes/> : <FaBars/> }
         </NavMobile>
         <NavItems onClick={handleClick} click={click}>
+            {/* <NavItemsInner> */}
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/sponsors">For Sponsors</NavLink></li>
             <li><NavLink to="/organizers">For Organizer</NavLink></li>
             <li><NavLink to="/contactUs">Contact Us</NavLink></li>
             <li><NavLink to="/aboutUs">About Us </NavLink></li>
-        </NavItems>
-        <NavSearchHolder>
-          <BiSearch size={20} cursor='pointer' style={{marginRight:'10%'}}/>
-          <div>
-              {button ? (
+            {/* </NavItemsInner> */}
+            <NavGroup>
+            <NavSearchHolder>
+            <BiSearch size={20} cursor='pointer' style={{marginRight:'10%'}}/>
+            </NavSearchHolder>
+            {button ? (
                 <NavButtonLink to="/logIn">
                   <NavButton>Log In</NavButton>
                 </NavButtonLink>
@@ -63,11 +65,9 @@ const Navbar = () => {
                   <NavButton>Log In</NavButton>
                 </NavButtonLink>
               )}
-          </div>
-          
-        
-          
-      </NavSearchHolder>
+            </NavGroup>
+           
+        </NavItems>
       </NavContent>
     </Nav>
     </IconContext.Provider>

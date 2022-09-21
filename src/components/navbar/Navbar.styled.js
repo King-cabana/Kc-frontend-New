@@ -7,7 +7,7 @@ export const Nav = styled.div`
     display: flex;
     padding: 3% 8%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
     
     @media (max-width: 768px){
         height: 10vh;
@@ -27,7 +27,7 @@ export const NavLogo = styled.div`
 `
 
 export const NavContent = styled.div`
-    width: 55vw;
+    width: 60vw;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -58,8 +58,10 @@ export const NavItems = styled.ul`
     float: left;
     list-style: none;
     display: flex;
-    width: 40vw;
+    width: 80vw;
     justify-content: space-between;
+    align-items: center;
+    
     
     li,a{
         text-decoration: none;
@@ -67,23 +69,25 @@ export const NavItems = styled.ul`
         font-weight: 600 ;
         font-size: small;
         cursor: pointer;
-    }
+        text-align: center;
 
-    & :hover {
+        &:hover {
         text-decoration: none;
         color: #FF2957;
         font-weight: 600 ;
         cursor: pointer;
 
     }
+        
+    }
 
     @media screen and (max-width: 960px){
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 50vh;
+        height: 100vh;
         position: absolute;
-        top: 68px;
+        top: 56px;
         left: ${({click}) => (click ? 0 : '-100%' )};
         opacity: 1;
         transition: all 1s ease;
@@ -115,8 +119,37 @@ export const NavLink = styled(Link)`
 } 
 `
 
+// export const NavItemsInner = styled.div`
+//     /* visibility: hidden; */
+//     display: flex;
+//     width: 45vw;
+//     justify-content: space-between;
+
+//     @media screen and (max-width: 960px){
+//         height: 60vh;
+//         display: flex;
+//         flex-direction: column;
+//         width: fit-content;
+        
+//     }
+
+// `
+
+export const NavGroup = styled.div`
+    width: 12vw;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 960px){
+        justify-content: center;
+    
+    }
+
+
+`
+
 export const NavSearchHolder = styled.div`
-    width: 20vw;
+    width: 2vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -155,7 +188,8 @@ export const NavButton = styled.button`
         }
 
         @media screen and (max-width: 960px){
-        /* visibility: hidden; */
-        width: 100%;
+    
+        width: 35vw;
+    
     }
 `
