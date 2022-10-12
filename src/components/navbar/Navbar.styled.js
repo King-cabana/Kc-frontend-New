@@ -1,15 +1,20 @@
 import styled  from 'styled-components'; 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 export const Nav = styled.div`
     height: 4vh;
+    width: 100vw;
     display: flex;
     padding: 3% 8%;
     align-items: center;
     justify-content: space-between; 
+    /* position: sticky; */
+    top: 0;
+    background-color: white;
     
-    @media (max-width: 768px){
+    @media (max-width: 960px){
+        position: sticky;
         height: 10vh;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     }
@@ -76,8 +81,8 @@ export const NavItems = styled.ul`
         color: #FF2957;
         font-weight: 600 ;
         cursor: pointer;
-
     }
+    
         
     }
 
@@ -104,7 +109,11 @@ export const LogoLink = styled(Link)`
 
 `
 
-export const NavLink = styled(Link)`
+export const NavBarLink = styled(NavLink)`
+       
+    /* &:active{
+        color: #FF2957;
+        } */
 
 @media screen and (max-width: 960px){
     text-align: center;
@@ -115,6 +124,10 @@ export const NavLink = styled(Link)`
     &:hover{
         color: #FF2957;
     }
+
+    /* &:active{
+        color: #FF2957;
+        } */
     
 } 
 `
@@ -126,11 +139,10 @@ export const NavLink = styled(Link)`
 //     justify-content: space-between;
 
 //     @media screen and (max-width: 960px){
-//         height: 60vh;
+//         height: 40vh;
 //         display: flex;
 //         flex-direction: column;
-//         width: fit-content;
-        
+//         width: fit-content;   
 //     }
 
 // `
@@ -142,7 +154,7 @@ export const NavGroup = styled.div`
 
     @media screen and (max-width: 960px){
         justify-content: center;
-    
+        height: 50vh;
     }
 
 
@@ -169,13 +181,19 @@ export const NavButtonLink = styled(Link)`
         padding: 4px 8px;
         border: none;
         outline: none;
+
+        
+    @media screen and (max-width: 960px){
+        height: 10vh;
+    }
+
 `
 
 export const NavButton = styled.button`
         width: 8vw;
         height: 7vh;
         border: 1.5px solid #FF2957;
-        background-color: white;
+        background-color: transparent;
         border-radius: 3px;
         color: #FF2957;
         cursor: pointer;
@@ -189,7 +207,6 @@ export const NavButton = styled.button`
 
         @media screen and (max-width: 960px){
     
-        width: 35vw;
-    
+        width: 35vw; 
     }
 `
