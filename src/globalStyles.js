@@ -88,6 +88,8 @@ export const AnimationContainer = styled.div`
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width: 960px){}
     
 `
 export const CardHolder = styled.div`
@@ -116,11 +118,11 @@ export const ExploreMore = styled.div`
         padding: 1%;
         float: right;
         margin-right: 10%;
-        margin-top: 2%;
+        /* margin-top: 1%;  */
         cursor: pointer;
 
         p{
-            width: 40%;
+            /* width: 40%; */
             color: #FFBC15;
             font-size: 18px;
             font-weight: 500;
@@ -135,7 +137,7 @@ export const ExploreMore = styled.div`
             }
 
             p{
-                width: 40%;
+                /* width: 40%; */
                 font-size: 11px;
         }
         }
@@ -168,8 +170,7 @@ export const ImageDisplay = styled.div`
             
 
             p{
-                font-size: 20px;
-                margin-top: 25%;  
+                font-size: 20px; 
             }
 
         }
@@ -178,8 +179,10 @@ export const ImageDisplayOverlay = styled.div`
     width:inherit;
     height:inherit;
     background:rgba(58, 45, 28, 0.6);
-    padding-top:8%;
     border-radius:7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 export const TCBody = styled.div`
     height:55vh;
@@ -217,7 +220,12 @@ export const ImageDisplayB = styled.div`
         background-size: 100%;
         background-repeat: no-repeat;
         margin:2% 8%;
-        opacity: 150%;    
+        opacity: 150%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+    
         p{
             text-align:center;
             font-size:24px;
@@ -228,10 +236,14 @@ export const ImageDisplayB = styled.div`
             height: 40vh;
             background-position: center;
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-items: center;
             
             p{
                 font-size: 12px;
-                margin-top: 25%;  
+                /* margin-top: 25%;   */
             }
         }
 `
@@ -240,14 +252,17 @@ export const ImageDisplayOverlayB = styled.div`
     width:inherit; 
     height:inherit;
     background: rgba(9, 12, 255, 0.6);
-    padding-top:8%;
     border-radius:7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 `
 
 export const InputHolder = styled.div`
     /* margin-left:23%; */
     margin-top:2%;
-    display:flex;
     width:inherit;
     gap: 1%;
     align-items: center;
@@ -285,9 +300,9 @@ export const SubscribeButton = styled.button`
         color: white;
         cursor: pointer;
 
-        /* @media screen and (max-width: 960px){
+        @media screen and (max-width: 960px){
             width: 20vw;
-        } */
+        }
 
 
 `

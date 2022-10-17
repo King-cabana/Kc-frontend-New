@@ -11,6 +11,7 @@ export const TestimonialCardContainer = styled.div`
         border-radius: 3px;
         cursor: pointer;
         transition: box-shadow .3s;
+        scroll-snap-align: start;
 
         &:hover{
         box-shadow: 0 0 11px rgba(33,33,33,.5);
@@ -19,6 +20,7 @@ export const TestimonialCardContainer = styled.div`
     @media screen and (max-width: 960px){
         width: 80vw;
         height: 40vh;
+      
         
     }
 

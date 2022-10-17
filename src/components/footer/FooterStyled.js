@@ -37,6 +37,7 @@ export const FooterContent = styled.div`
         justify-items: center;
         align-content: center;
         text-align: center;
+        position: relative;
     }
 `
 
@@ -73,13 +74,13 @@ export const FooterInner = styled.div`
 
 export const IconHolder = styled.div`
     display:flex;
-    width:10vw;
+    width:12vw;
     justify-content:space-between;
     margin-top:5%;
    
 
     @media screen and (max-width: 960px){
-        width: 35vw;
+        width: 42vw;
     }
     
     
@@ -96,11 +97,11 @@ export const SocialIcon = styled.a`
         display:flex;
         justify-content:center;
         align-content:center;
-        background-color: rgba(255,255,255, 0.3);
+        /* background-color: rgba(255,255,255, 0.3); */
     }
 
     img{
-        filter:invert(100%) sepia(100%) saturate(0%) hue-rotate(95deg) brightness(103%) contrast(105%);
+        /* filter:invert(100%) sepia(100%) saturate(0%) hue-rotate(95deg) brightness(103%) contrast(105%); */
         width:20px;
         height:15px;
         margin:auto;
@@ -169,8 +170,28 @@ export const EventButton = styled.button`
             height: 8vh;
             line-height: 5vh;
             width: 40vw;
-            
+        }
+`
 
-        
+export const FooterLine = styled.hr`
+        width:82vw;
+        border:1px solid white;
+        background:white;
+        margin-right:auto;        
+
+`
+
+export const BottomLogo = styled.div`
+        color:white;
+        align-items:center;
+        margin-top:1%;
+        display:flex;
+        /* margin-left:5%; */
+        width:12vw;
+        height:10vh;
+        justify-content:space-between;
+
+        @media screen and (max-width: 960px){
+            width:40vw;  
         }
 `

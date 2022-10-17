@@ -115,7 +115,7 @@ export const EventButton = styled.button`
 
 export const ContentSection = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
 `
 
 export const ContentSectionHeader = styled.h2`

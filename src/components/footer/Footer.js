@@ -1,16 +1,19 @@
 import React from 'react'
 import LogoWhite from '../../images/KingCabanaLogoWhite.svg'
-import Facebook from '../../images/facebook-svgrepo-com.svg'
-import Linkedin from '../../images/linkedin-svgrepo-com.svg'
-import Twitter from '../../images/twitter-svgrepo-com.svg'
+import Facebook from '../../images/facebook-svgrepo-com (1).svg'
+import Linkedin from '../../images/linkedin-logo-2430.svg'
+import Twitter from '../../images/twitter-logo-2429.svg'
 import Instagram from '../../images/instagram-svgrepo-com.svg'
 import Playstore from '../../images/logo-google-playstore-svgrepo-com.svg'
+import TikTok from '../../images/tiktok-logo-logo-svgrepo-com.svg'
 import apple from '../../images/apple-svgrepo-com.svg'
 import {FooterBody, EventButton,
         FooterContent, FooterInner, 
         IconHolder, SocialIcon,
         FooterLinksHolder, 
-        EventButtonHolder} from './FooterStyled'
+        EventButtonHolder,
+        FooterLine,
+        BottomLogo} from './FooterStyled'
 import ScrollButton from '../footer/ScrollToTop'
 
 
@@ -31,7 +34,7 @@ const Footer = () => {
                               <img src={Linkedin} alt=""/>
                             </div>
                         </SocialIcon>
-                        <SocialIcon href="info@kingcabana.com">
+                        <SocialIcon href="https://twitter.com/realKingCabana" target="_blank">
                             <div>
                               <img src={Twitter} alt=""/>
                             </div>
@@ -41,9 +44,14 @@ const Footer = () => {
                               <img src={Facebook} alt=""/>
                             </div>
                         </SocialIcon>
-                        <SocialIcon href="info@kingcabana.com">
+                        <SocialIcon href="https://www.instagram.com/realkingcabana/" target="_blank">
                             <div>
                               <img src={Instagram} alt=""/>
+                            </div>
+                        </SocialIcon>
+                        <SocialIcon href="info@kingcabana.com">
+                            <div>
+                              <img src={TikTok} alt=""/>
                             </div>
                         </SocialIcon>
                   </IconHolder> 
@@ -73,12 +81,14 @@ const Footer = () => {
                 </EventButtonHolder>
                 <ScrollButton/>
                
-            
               </FooterContent>
-             <hr style={{width:'82vw', border:'1px solid white', background:'white', marginRight:'auto'}}></hr> 
-             <div style={{color:'white', alignItems:'center', marginTop:'4%', display:'flex', marginLeft:'5%', width:'12vw', height:'10vh', justifyContent:'space-between'}}>@2022
-             <img src={LogoWhite} alt="" width="80px" height="80px"/>
-             </div>
+              <FooterLine/>
+              
+              <BottomLogo>
+                <p>@ 2022</p>
+                <img src={LogoWhite} alt="" width="80px" height="80px"/>
+              </BottomLogo>
+            
             </FooterBody>
           
     </>

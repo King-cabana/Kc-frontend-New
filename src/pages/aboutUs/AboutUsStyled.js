@@ -19,12 +19,14 @@ export const HeroSection = styled.div`
 
 
     @media screen and (max-width: 960px){
-        background-size: contain;
+        background-size: cover;
+        background-position: center;
         object-fit: contain;
+        height: 65vh;
 
         p{
             font-size: 18px;
-            padding-top:40%;
+            padding-top:25%;
         }
         
     }   
@@ -38,8 +40,9 @@ export const ASContentSection = styled.div`
     
     @media screen and (max-width: 960px){
         /* width: 100vw; */
-        display: inline-block;
+        display: block;
         padding: 0;
+        height: fit-content;
     }
 
    
@@ -49,11 +52,39 @@ export const ASContent = styled.div`
     width: 50vw;
     height: 60vh;
     padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: 960px){
         width: 100vw;
-        display: inline-block;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
+`
+
+export const ASInner = styled.div`
+    height:20vh;
+    display:flex;
+    justify-content:space-between;
+
+    @media screen and (max-width: 960px){
+        height:25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+`
+export const ASInnerImg = styled.div`
+    width: 5vw;
 `
 
 export const ASImage = styled.div`
@@ -82,12 +113,17 @@ export const TCContainer = styled.div`
     display:inline-flex;
     flex-wrap:wrap;
     gap:3% 1%;
+   
     
-
     @media screen and (max-width: 960px){
     overflow: scroll;
     scroll-snap-type: x mandatory;
+    /* scroll-behavior: smooth; */
     gap: 3%;
     display: flex;
+    flex-direction:column;
+    height: 45vh;
+    
+  
 }
 `

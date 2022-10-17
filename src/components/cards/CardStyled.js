@@ -9,6 +9,7 @@ export const EventCards = styled.div`
     border-radius: 3px;
     cursor: pointer;
     transition: box-shadow .3s;
+    margin-bottom: 1%;
    
     &:hover{
         box-shadow: 0 0 11px rgba(33,33,33,.5);

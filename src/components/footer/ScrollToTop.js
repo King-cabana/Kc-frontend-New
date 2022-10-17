@@ -41,8 +41,17 @@ const TopButton = styled.div`
    color: white;
    margin-top: 13%;
 
+   svg{
+	width: 45px;
+	height: 45px;
+   }
+
    @media screen and (max-width: 960px){
-		/* position: relative; */
+		position: absolute;
+		margin-left: 130%;
+		margin-top: 300%;
+		
+		
    }
 `
 

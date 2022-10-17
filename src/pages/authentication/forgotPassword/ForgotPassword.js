@@ -6,7 +6,9 @@ import {HiOutlineMail} from "react-icons/hi"
 
 
 const forgetPassword = () => {
+  
   return (
+    
     <ModalOverlay>
         <ForgetPasswordBody>
           <ForgetPasswordContent>

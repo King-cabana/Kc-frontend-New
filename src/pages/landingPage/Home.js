@@ -13,15 +13,20 @@ import TestimonialCard from '../../components/cards/TestimonialCard'
 import {FiChevronsRight} from 'react-icons/fi'
 import whatsappIcon from '../../images/whatsapp-symbol-logo-svgrepo-com.svg'
 import Footer from '../../components/footer/Footer'
+import Search from '../../components/search/SearchBar'
+import { LogoLink } from '../../components/navbar/Navbar.styled'
+import Navbar from '../../components/navbar/Navbar'
 
    
 
 const Home = () => {
   return (
     <>
+      <Navbar/>
       <HeroSection>
         <BgOverlay>
           <ContentHolder>
+            {/* <Search/> */}
           <h1>Dreams do come true. <span>Create fulfiling memories today.</span></h1>
           <p>Connecting People | Creating Memories | Capturing alue</p>
           <BtnHolder>
@@ -42,7 +47,7 @@ const Home = () => {
           <Card/>
         </CardHolder>
         <ExploreMore>
-            <p>Explore More</p> 
+            <LogoLink to="/eventcategories"><p>Explore More</p> </LogoLink>
             <FiChevronsRight color={'#FFBC15'} style={{width:'fit-content'}} size={30}/>  
         </ExploreMore>
       </ContentSection>
@@ -63,7 +68,7 @@ const Home = () => {
           <Card/>
         </CardHolder>
         <ExploreMore>
-            <p>Explore More</p> 
+        <LogoLink to="/coporatesponsorship"><p>Explore More</p> </LogoLink>
             <FiChevronsRight color={'#FFBC15'} style={{width:'fit-content'}} size={30}/>  
         </ExploreMore>
       </ContentSection>
