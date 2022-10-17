@@ -47,7 +47,7 @@ export const ContentHolder = styled.div`
 
     p{
         color:white;
-        font-size:26px;
+        font-size:22px;
         padding-top:2%;
     }
 
@@ -66,7 +66,7 @@ export const ContentHolder = styled.div`
         }
 
         p{
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 

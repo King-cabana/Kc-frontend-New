@@ -7,6 +7,7 @@ import {Nav, NavLogo, LogoLink, NavContent, NavItems, NavMobile, NavBarLink,
         NavButton, NavButtonLink, NavSearchHolder} from './Navbar.styled'
 import Logo from '../../images/kingCabanaLogo.svg'
 import { NavGroup } from './Navbar.styled';
+import SignIn from '../../pages/authentication/signIn/SignIn';
 
 
 
@@ -40,6 +41,12 @@ const Navbar = () => {
   // }
 
 
+const [showModal, setShowmodal] = useState(false);
+
+const openModal = () =>{
+  setShowmodal(prev => !prev)
+}
+
   return (
     <>
     <IconContext.Provider value={{size:'25px'}}>
@@ -67,11 +74,11 @@ const Navbar = () => {
             </NavSearchHolder>
             {button ? (
                 <NavButtonLink to="/logIn">
-                  <NavButton>Log In</NavButton>
+                  <NavButton onClick={openModal}>Log In</NavButton>
                 </NavButtonLink>
               ) : (
                 <NavButtonLink to="/logIn">
-                  <NavButton>Log In</NavButton>
+                  <NavButton onClick={openModal}>Log In</NavButton>
                 </NavButtonLink>
               )}
             </NavGroup>
@@ -80,6 +87,7 @@ const Navbar = () => {
       </NavContent>
     </Nav>
     </IconContext.Provider>
+    <SignIn showModal={showModal} setShowModal={setShowmodal}/>
     </>
   )
 }

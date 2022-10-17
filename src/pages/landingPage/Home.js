@@ -28,7 +28,8 @@ const Home = () => {
           <ContentHolder>
             {/* <Search/> */}
           <h1>Dreams do come true. <span>Create fulfiling memories today.</span></h1>
-          <p>Connecting People | Creating Memories | Capturing alue</p>
+          <p>Connecting People | Creating Memories | <br/>
+          Capturing Value</p>
           <BtnHolder>
             <EventButton>Create Event</EventButton>
             <EventButton style={{background:'transparent', border:'1.5px solid white'}}>Sponsor Events</EventButton>
