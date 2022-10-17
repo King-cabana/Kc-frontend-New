@@ -6,6 +6,10 @@ import { AnimationContainer } from '../../globalStyles';
 import { LogoLink } from '../../components/navbar/Navbar.styled';
 import { HomePageButton, NPInner } from './NoPageStyled';
 
+
+
+
+
 const NoPage = () => {
   return (
     <>
