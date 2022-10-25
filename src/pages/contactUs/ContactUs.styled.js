@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const ContactBody = styled.div`
 display: flex;
-margin: 5% auto;
+margin: 1% auto;
 border: 1px solid rgba(0, 0, 0, 0.2);
 height: 120vh;
 width: 82vw;
+border-radius: 7px;
 
 @media only screen and (max-width: 960px){
     border: none;
@@ -17,13 +18,14 @@ width: 82vw;
 
 export const LeftSide = styled.div`
 width: 30vw;
-height: 120vh;
+height: inherit;
 color: white;
 background-color: #FF2957;
 padding-top: 8%;
 padding-left: 4%;
 padding-right: 13%;
-font-size: 105%;
+font-size: 14px;
+border-radius: 7px 0 0 7px  ;
 
 h1{
     font-size: 90%;
@@ -136,10 +138,13 @@ justify-content: space-between;
 `
 
 export const NameHolder = styled.div`
+/* height: 7vh; */
+
   input{
     padding: 2%;
     width: 17vw;
-    height: 5vh;
+    height: 7vh;
+    outline: transparent;
     justify-content: space-around;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -149,7 +154,7 @@ export const NameHolder = styled.div`
        /* padding-top: 10%; */
         input{
             width: 75vw;
-            height: 8vh;
+            height: 7vh;
             
         }
     }
@@ -163,16 +168,17 @@ export const LastNameHolder = styled.div`
   input{
     padding: 2%;
     width: 17vw;
-    height: 5vh;
+    height: 7vh;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: transparent;
 }
  
 @media only screen and (max-width:960px ){
    margin-top: 10%;
     input{
         width: 75vw;
-        height: 8vh;
+    
     }
 }
     
@@ -185,16 +191,17 @@ margin-top: 5%;
 input{
     padding: 2%;
     width: 35vw;
-    height: 8vh;
+    height: 7vh;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: transparent;
 }
 
 @media only screen and (max-width: 960px){
   margin-top: 20%;
   input{ 
     width: 75vw;
-    height: 8vh;
+
 } 
 }
 
@@ -206,9 +213,10 @@ margin-top: 5%;
 input{
     padding: 2%;
     width: 35vw;
-    height: 8vh;
+    height: 7vh;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: transparent;
 }
     @media only screen and (max-width: 960px){
     margin-top: 20%;
@@ -230,6 +238,7 @@ textarea{
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     resize: none;
+    outline: transparent;
 }
 
   @media only screen and (max-width:960px){

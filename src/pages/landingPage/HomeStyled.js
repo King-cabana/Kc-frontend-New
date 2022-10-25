@@ -3,9 +3,9 @@ import background from '../../images/clay-banks-POzx_amnWJw-unsplash.jpg'
 
 
 
-export const Section = styled.div`
+export const HeroSection = styled.div`
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background: url(${background}) ;
     background-position: right;
@@ -15,11 +15,7 @@ export const Section = styled.div`
 
     @media screen and (max-width: 960px){
         background-size: cover;
-
-    
-
-    }
-        
+    }   
 `
 
 export const BgOverlay = styled.div`
@@ -46,12 +42,12 @@ export const ContentHolder = styled.div`
     }
 
     span{
-        color:  #FFBC15;
+        color:#FFBC15;
     }
 
     p{
         color:white;
-        font-size:26px;
+        font-size:22px;
         padding-top:2%;
     }
 
@@ -70,9 +66,13 @@ export const ContentHolder = styled.div`
         }
 
         p{
-            font-size: 16px;
+            font-size: 14px;
         }
     }
+
+    /* @media screen and (orientation: landscape){
+        padding-top: 7%;
+    } */
 `
 
 export const BtnHolder = styled.div`
@@ -88,8 +88,7 @@ export const BtnHolder = styled.div`
         justify-content: center;
         align-content: center;
         justify-items: center ;
-        /* padding-left: 25%; */
-        /* justify-content: center */
+        
         
         
     }
@@ -111,5 +110,30 @@ export const EventButton = styled.button`
             margin: 7% 55%;
            
         }
+    
 `
+
+export const ContentSection = styled.div`
+    width: 100vw;
+    height: 90vh;
+`
+
+export const ContentSectionHeader = styled.h2`
+    text-align:center; 
+    padding-top:2%; 
+    color:#484848;
+`
+
+export const ContentSectionParagraph = styled.p`
+    color:#484848;
+    padding-left:8%;
+    font-size:20px; 
+    font-weight:500; 
+`
+    
+        /* @media screen and (max-width: 960px) {
+        display: inline-block;
+        overflow: scroll;
+        scroll-snap-type: x mandatory
+        } */
 

@@ -34,7 +34,7 @@ export const App = styled.div`
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
-  background-color: white;
+  background: rgba(49,49,49,0.8);
 
 
  @media only screen and (max-width:960px){

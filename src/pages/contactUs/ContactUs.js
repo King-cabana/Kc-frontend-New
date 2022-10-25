@@ -3,20 +3,23 @@ import {ContactBody, LeftSide, ContactLog, Mail,Location,Phone,EmailUsTextHolder
 import {HiOutlineLocationMarker} from 'react-icons/hi'
 import { HiOutlineMail } from 'react-icons/hi'
 import {BsTelephone} from 'react-icons/bs'
+import Navbar from '../../components/navbar/Navbar'
+import Footer from '../../components/footer/Footer'
 
 const ContactUs = () => {
   return (
-    
+    <>
+    <Navbar/>
     <ContactBody>
       <LeftSide>
-        <h1>Get in touch</h1>
-        <p2>We'd be thrilled to hear from you. Our staff is always available to ease your journey.</p2>
+        <p style={{fontSize:'24px'}}>Get in touch</p>
+        <p style={{fontSizew:'14px'}}>We'd be thrilled to hear from you. Our staff is always available to ease your journey.</p>
 
         <ContactLog>
           <Mail>
             <HiOutlineMail style={{width: '25px', height:'25px'}}/>
             <EmailUsTextHolder>
-             <h1>You can email us @</h1>
+             <p style={{fontSize:'24px'}}>You can email us @</p>
              <p>info@kingcabana.com</p> 
             </EmailUsTextHolder> 
           </Mail>
@@ -69,12 +72,8 @@ const ContactUs = () => {
       </RightSide>
 
     </ContactBody>
-    
-
-        
-      
-    
-      
+    <Footer/>
+    </>
     
   )
 }

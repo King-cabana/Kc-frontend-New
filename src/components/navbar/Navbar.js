@@ -1,11 +1,14 @@
 import React, {useState, useEffect} from 'react'
-import {FaBars, FaTimes} from 'react-icons/fa'
+import hb from '../../images/hb.svg'
+import times from '../../images/times.svg'
 import { BiSearch } from 'react-icons/bi';
 import {IconContext} from 'react-icons/lib'
-import {Nav, NavLogo, LogoLink, NavContent, NavItems, NavMobile, NavLink,
-        NavButton, NavButtonLink, NavSearchHolder, NavItemsInner} from './Navbar.styled'
+import {Nav, NavLogo, LogoLink, NavContent, NavItems, NavMobile, NavBarLink,
+        NavButton, NavButtonLink, NavSearchHolder} from './Navbar.styled'
 import Logo from '../../images/kingCabanaLogo.svg'
 import { NavGroup } from './Navbar.styled';
+import SignIn from '../../pages/authentication/signIn/SignIn';
+
 
 
 
@@ -30,6 +33,19 @@ const Navbar = () => {
 
   window.addEventListener('resize', showButton)
 
+  // const navLinkStyles = ({isActive}) => {
+  //     return{
+  //       fontWeight: isActive? '600' : 'normal',
+  //       color: isActive? '#FF2957' : 'black',
+  //     }
+  // }
+
+
+const [showModal, setShowmodal] = useState(false);
+
+const openModal = () =>{
+  setShowmodal(prev => !prev)
+}
 
   return (
     <>
@@ -42,15 +58,15 @@ const Navbar = () => {
       </NavLogo>
       <NavContent>
         <NavMobile onClick={handleClick}>
-          {click ? <FaTimes/> : <FaBars/> }
+          {click ? <img src={times} alt=''/> : <img src={hb} alt=''/> }
         </NavMobile>
         <NavItems onClick={handleClick} click={click}>
             {/* <NavItemsInner> */}
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/sponsors">For Sponsors</NavLink></li>
-            <li><NavLink to="/organizers">For Organizer</NavLink></li>
-            <li><NavLink to="/contactUs">Contact Us</NavLink></li>
-            <li><NavLink to="/aboutUs">About Us </NavLink></li>
+            <li><NavBarLink  to="/">Home</NavBarLink></li>
+            <li><NavBarLink to="/sponsors">For Sponsors</NavBarLink></li>
+            <li><NavBarLink to="/organizers">For Organizer</NavBarLink></li>
+            <li><NavBarLink to="/contactUs">Contact Us</NavBarLink></li>
+            <li><NavBarLink to="/aboutUs">About Us </NavBarLink></li>
             {/* </NavItemsInner> */}
             <NavGroup>
             <NavSearchHolder>
@@ -58,11 +74,11 @@ const Navbar = () => {
             </NavSearchHolder>
             {button ? (
                 <NavButtonLink to="/logIn">
-                  <NavButton>Log In</NavButton>
+                  <NavButton onClick={openModal}>Log In</NavButton>
                 </NavButtonLink>
               ) : (
                 <NavButtonLink to="/logIn">
-                  <NavButton>Log In</NavButton>
+                  <NavButton onClick={openModal}>Log In</NavButton>
                 </NavButtonLink>
               )}
             </NavGroup>
@@ -71,6 +87,7 @@ const Navbar = () => {
       </NavContent>
     </Nav>
     </IconContext.Provider>
+    <SignIn showModal={showModal} setShowModal={setShowmodal}/>
     </>
   )
 }
