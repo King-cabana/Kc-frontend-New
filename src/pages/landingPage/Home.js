@@ -13,9 +13,11 @@ import TestimonialCard from '../../components/cards/TestimonialCard'
 import {FiChevronsRight} from 'react-icons/fi'
 import whatsappIcon from '../../images/whatsapp-symbol-logo-svgrepo-com.svg'
 import Footer from '../../components/footer/Footer'
-import Search from '../../components/search/SearchBar'
+// import Search from '../../components/search/SearchBar'
 import { LogoLink } from '../../components/navbar/Navbar.styled'
 import Navbar from '../../components/navbar/Navbar'
+import { Typewriter } from 'react-simple-typewriter'
+
 
    
 
@@ -27,7 +29,25 @@ const Home = () => {
         <BgOverlay>
           <ContentHolder>
             {/* <Search/> */}
-          <h1>Dreams do come true. <span>Create fulfiling memories today.</span></h1>
+
+      <h1 style={{ margin: 'auto 0', fontWeight: 'bold', }}>
+          Dreams do come true.<br/>{' '}
+              <span style={{ color: '#FFBC15', fontWeight: 'bold'}}>
+          <Typewriter
+            words={['Create Memories', 
+                    'Secure Sponsorships',
+                    'Assess Target Markets'
+                  ]}
+            loop={Infinity}
+            cursor
+            cursorStyle='_'
+            typeSpeed={100}
+            deleteSpeed={100}
+            delaySpeed={1000}
+          />
+        </span>
+      </h1>
+
           <p>Connecting People | Creating Memories | <br/>
           Capturing Value</p>
           <BtnHolder>
@@ -60,7 +80,7 @@ const Home = () => {
       </ImageDisplay>
 
       <ContentSection>
-        <ContentSectionHeader>Coporate Sponsorship</ContentSectionHeader>
+        <ContentSectionHeader>Corporate Sponsorship</ContentSectionHeader>
         <ContentSectionParagraph>Special Events</ContentSectionParagraph>
         <CardHolder>
           <Card/>

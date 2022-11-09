@@ -72,6 +72,7 @@ export const ASInner = styled.div`
     display:flex;
     justify-content:space-between;
 
+
     @media screen and (max-width: 960px){
         height:25vh;
         display: flex;

@@ -34,7 +34,7 @@ const Footer = () => {
                               <img src={Linkedin} alt=""/>
                             </div>
                         </SocialIcon>
-                        <SocialIcon href="https://twitter.com/realKingCabana" target="_blank">
+                        <SocialIcon href="https://twitter.com/KingCabanaHQ" target="_blank">
                             <div>
                               <img src={Twitter} alt=""/>
                             </div>
@@ -44,7 +44,7 @@ const Footer = () => {
                               <img src={Facebook} alt=""/>
                             </div>
                         </SocialIcon>
-                        <SocialIcon href="https://www.instagram.com/realkingcabana/" target="_blank">
+                        <SocialIcon href="https://www.instagram.com/kingcabanahq/" target="_blank">
                             <div>
                               <img src={Instagram} alt=""/>
                             </div>

@@ -105,8 +105,11 @@ export const NavItems = styled.ul`
         transition: all 1s ease;
         background-color: white;
         padding-top: 20%;
-    
-    
+
+    }
+
+    @media screen and (min-width: 600px){
+        top: 100px;
     }
 
 

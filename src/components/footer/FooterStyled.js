@@ -4,9 +4,9 @@ export const FooterBody = styled.div`
     width: 100vw;
     height: 65vh;
     background-color: #200B51;
-    padding: 6% 8%;
+    padding: 6% 9%;
 
-    @media screen and (max-width: 960px){
+    @media screen and (min-width: 320px)and (max-width: 480px){
        display: flex;
         flex-direction: column;
         width:fit-content;
@@ -18,6 +18,29 @@ export const FooterBody = styled.div`
         text-align: center;
     }
 
+    @media screen and (min-width: 320px)and (max-width: 480px){
+       display: flex;
+        flex-direction: column;
+        width:fit-content;
+        height:max-content;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 481px)and (max-width: 820px){
+       display: flex;
+        flex-direction: column;
+        width:fit-content;
+        height:max-content;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+    }
 `
 
 export const FooterContent = styled.div`
@@ -27,7 +50,7 @@ export const FooterContent = styled.div`
     height:35vh;
 
     
-    @media screen and (max-width: 960px){
+    @media screen and (min-width: 320px)and (max-width: 480px){
         display: flex;
         flex-direction: column;
         width:fit-content;
@@ -38,6 +61,19 @@ export const FooterContent = styled.div`
         align-content: center;
         text-align: center;
         position: relative;
+    }
+
+    @media screen and (min-width: 481px)and (max-width: 820px){
+        flex-direction: column;
+        width:fit-content;
+        height:max-content;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+        position: relative;
+
     }
 `
 

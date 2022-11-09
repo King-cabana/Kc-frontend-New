@@ -56,13 +56,13 @@ export const Form = styled.form`
     label{
         font-weight: 500;
         font-size: 12px;
-        margin-top: 5%;
+        margin-top: 2%;
     }
 `
 
 export const InputFieldWrapper = styled.div`
     display: flex;
-    height: 7vh;
+    height: 6vh;
     outline: 1px solid #C4C4C4;
     border-radius: 4px;
     margin-top: 2%;
@@ -73,6 +73,7 @@ export const InputFieldWrapper = styled.div`
         border: none;
         outline: transparent;
         padding: 3%;
+        background-color: transparent;
     }
 
     @media screen and (max-width: 960px){
@@ -328,6 +329,47 @@ export const WhatsApp = styled.div`
             height:35px;
     }
     }
+`
+export const Div = styled.div`
+ margin-top: 8%;
+ display: flex;
+ align-items: center;
+ width: 25vw;
+ font-size: 12px;
+ justify-content: space-between;
+
+@media only screen and (max-width:960px){
+  width: 80vw;
+
+}
+
+`
+
+export const Horizontal = styled.div`
+ width: 40vw;
+ height: 0.2vh;
+ background-color: #C4C4C4;
+  
+ @media only screen and (max-width:960px){
+   width: 70vw;
+   
+ } 
+
+`
+
+export const Or = styled.div`
+width: 50vw;
+color: #C4C4C4;
+display: flex;
+justify-content: center;
+align-items: center;
+
+@media only screen and (max-width:960px){
+  width: 90vw;
+  padding: 5%;
+ 
+}
+
 `
 
 

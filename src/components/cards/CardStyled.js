@@ -17,15 +17,15 @@ export const EventCards = styled.div`
     }
 
     @media screen and (max-width: 960px) {
-        width: 82vw;
-        height: 70vh;
+        width: 72vw;
+        height: 60vh;
         border-radius: 10px;
         scroll-snap-align: start
     }
 `
 
 export const ImageHolder = styled.div`
-    height:30vh;
+    /* height:30vh; */
     border-radius:3px;
 
     img{

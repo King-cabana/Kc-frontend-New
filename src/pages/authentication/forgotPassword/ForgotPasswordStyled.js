@@ -75,6 +75,10 @@ export const ForgetPasswordImage = styled.div`
     background-position: center;
     object-fit: center;
 
+    /* img{
+        max-width: 100%;
+    } */
+
     @media screen and (max-width: 960px){
         display: none;
     }
