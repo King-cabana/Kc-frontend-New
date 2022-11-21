@@ -10,20 +10,11 @@ const EventCategories = () => {
     <div>
         <Navbar/>
         <ContentSectionHeader>Event Categories</ContentSectionHeader>
-        <CardHolder style={{display:'inline-flex', flexWrap:'wrap', margin:'1%', rowGap:'1% 1%'}}>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          
+        <CardHolder style={{display:'inline-flex', flexWrap:'wrap', margin:'1%', rowGap:'1% 1%', justifyContent:'center'}}>
+          <Card/><Card/><Card/>
+          <Card/><Card/> <Card/> 
+          <Card/><Card/><Card/>
+          <Card/><Card/><Card/>
         </CardHolder>
         <Footer/>
     </div>

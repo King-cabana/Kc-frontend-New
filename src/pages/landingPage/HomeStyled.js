@@ -27,12 +27,10 @@ export const BgOverlay = styled.div`
 `
 
 export const ContentHolder = styled.div`
-    width:65vw; 
+    width:90vw; 
     align-content:center; 
-    padding:8%; 
+    padding:6% 8% ; 
     line-height: 1.2;
-    justify-content: center;
-    justify-items: center;
     align-items: center;
 
     h1{
@@ -58,6 +56,7 @@ export const ContentHolder = styled.div`
         width: fit-content;
         text-align: center;
         line-height: 1.3;
+
         
         
         
@@ -129,11 +128,11 @@ export const ContentSectionParagraph = styled.p`
     padding-left:8%;
     font-size:20px; 
     font-weight:500; 
+
+    @media screen and (max-width: 960px){
+        font-size: small;
+        margin: 3% 0;
+    }
 `
-    
-        /* @media screen and (max-width: 960px) {
-        display: inline-block;
-        overflow: scroll;
-        scroll-snap-type: x mandatory
-        } */
+
 

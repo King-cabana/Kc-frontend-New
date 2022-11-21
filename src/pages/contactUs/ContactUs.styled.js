@@ -5,121 +5,103 @@ display: flex;
 margin: 1% auto;
 border: 1px solid rgba(0, 0, 0, 0.2);
 height: 120vh;
-width: 82vw;
+width: 72vw;
 border-radius: 7px;
+
 
 @media only screen and (max-width: 960px){
     border: none;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
 }
-
-
 `
-
 
 export const LeftSide = styled.div`
 width: 30vw;
 height: inherit;
 color: white;
 background-color: #FF2957;
-padding-top: 8%;
-padding-left: 4%;
-padding-right: 13%;
-font-size: 14px;
+padding: 10% 5%;
 border-radius: 7px 0 0 7px  ;
-
-h1{
-    font-size: 90%;
-    width: 50vw;
-    padding-bottom: 5%;
-}
 
 @media only screen and (max-width: 960px){
     display: none;
 
 }
-
-
-
 `
 
 export const ContactLog = styled.div`
-
-
+height: 40vh;
+width: 20vw;
+margin-top: 20%;
 `
+
 
 export const Mail = styled.div`
-margin-top: 15%;
+margin-top: 5%;
 display: flex;
-width: 14vw;
+width: 18vw;
 justify-content: space-between;
-`
 
+p{
+    font-size: 12px;
+}
+`
 
 export const EmailUsTextHolder = styled.div`
     height: 8vh;
-    width: 11vw;
+    width: 15vw;
 
-`
-
-export const Location = styled.div`
-   margin-top: 15%;
-   display: flex;
-   width: 14vw;
-   justify-content: space-between;
-
-`
-
-export const LocationTextHolder = styled.div`
-    height: 8vh;
-    width: 11vw;
-
-    p{
-        width: 50vw;
-    }
-
-`
-
-export const Phone = styled.div`
-   margin-top: 15%;
-   display: flex;
-   width: 14vw;
-   justify-content: space-between;
-
-`
-
-export const PhoneHolder = styled.div`
-    height: 8vh;
-    width: 11vw;
 `
 
 export const RightSide = styled.div`
-width: 52vw;
+width: 42vw;
 padding: 5%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
-h1{
-  text-align: center; 
-  width: 35vw;
-}
-   
- @media only screen and (max-width: 960px){
     h1{
-        margin: auto;
-        width: 65vw;
-        padding: 5%;
+    text-align: center; 
+    font-size: 26px;
+    font-weight:500;
     }
- }
+
+    p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+ @media only screen and (max-width: 960px){
+    width: inherit;
+
+    p{
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    h1{
+    text-align: center; 
+    font-size: 20px;
+    }
+    
+}
 
 `
 
 export const ContactForm = styled.div`
-width: 35vw;
-margin-top: 5%;
-justify-content: space-between;
-
-@media only screen and (max-width: 960px){
-    margin-top: 5%;
-}
-
+width: inherit;
+padding: 5%;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+height: inherit;
 
 `
 
@@ -130,15 +112,16 @@ justify-content: space-between;
 
 
 @media only screen and (max-width: 960px){
-    display: block;
-    width: 75vw;
-    /* margin-top: 15%; */
-    /* height: 8vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    padding: 2%;
 }
 `
 
 export const NameHolder = styled.div`
-/* height: 7vh; */
 
   input{
     padding: 2%;
@@ -150,17 +133,13 @@ export const NameHolder = styled.div`
     border: 1px solid rgba(0, 0, 0, 0.2);
   }
     @media only screen and (max-width: 960px){
-       margin-top: 10%;
-       /* padding-top: 10%; */
+      
         input{
-            width: 75vw;
+            width: 90vw;
             height: 7vh;
             
         }
     }
-  
-
-
 `
 
 export const LastNameHolder = styled.div`
@@ -176,36 +155,14 @@ export const LastNameHolder = styled.div`
  
 @media only screen and (max-width:960px ){
    margin-top: 10%;
-    input{
-        width: 75vw;
-    
-    }
-}
-    
-`
-   
-
-export const EmailHolder = styled.div`
-margin-top: 5%;
-
-input{
-    padding: 2%;
-    width: 35vw;
-    height: 7vh;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    outline: transparent;
-}
-
-@media only screen and (max-width: 960px){
-  margin-top: 20%;
-  input{ 
-    width: 75vw;
-
-} 
+        input{
+            width: 90vw;
+            height: 7vh;
+        }
 }
 
 `
+
 
 export const NumberHolder = styled.div`
 margin-top: 5%;
@@ -219,10 +176,10 @@ input{
     outline: transparent;
 }
     @media only screen and (max-width: 960px){
-    margin-top: 20%;
+    margin-top: 8%;
         input{
-            width: 75vw;
-            height: 8vh;
+            width: 90vw;
+            height: 7vh;
         }
     }
 
@@ -242,10 +199,10 @@ textarea{
 }
 
   @media only screen and (max-width:960px){
-    margin-top: 20%;
+    margin-top: 10%;
    
     textarea{
-        width: 75vw;
+        width: 90vw;
     }
   }
 `
@@ -260,7 +217,7 @@ textarea{
     cursor: pointer;
 
     @media only screen and (max-width: 960px){
-        width: 75vw;
-        margin-top: 25%;
+        width: 90vw;
+        margin-top: 10%;
     }
 `  

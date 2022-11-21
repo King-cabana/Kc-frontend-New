@@ -1,150 +1,108 @@
 import styled from "styled-components"
-import image from "../../images/image2.jpg"
+import youngman from "../../images/image1.jpg"
 
 
-export const App = styled.div`
-  width:60vw;
-  height: 80vh;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  display: flex;
-  background-color: white;
 
 
- @media only screen and (max-width:960px){
-    width: 100vw;
-    /* border: none; */
-    box-shadow: none;
-    /* margin: auto 5%; */
-    /* color: black; */
-   
-   
+export const RegisterBody = styled.div`
+    height: 98vh;
+    width: 60vw;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
     
- } 
+
+    @media screen and (max-width: 960px) {
+        height: 98vh;
+        width: 95vw;
+        border-radius: 3px;
+    }
 
 `
 
-export const Div1 = styled.div`
-
- width: 30vw;
- height: 80vh;
- border-radius: 10px 0 0 10px;
- display: flex;
- flex-direction: column;
- align-items: center;
+export const RegisterOrgMedia = styled.div`
+display: flex;
  justify-content: center;
- background-color: white;
-
- 
-
-
- @media only screen and (max-width:960px){
-  /* background-color: white; */
-  margin: auto 5%;
-  
-  img{
-    /* margin-top: 5%; */
-  }
- 
- }
-`
-
-
-export const Media = styled.div`
- background-color: white;
- display: flex;
- justify-content: space-between;
+ align-items: center;
  width: 15vw;
+ gap: 2%;
  height: 5vh;
- margin-left: 25%;
- background-color: white;
+ margin-top: 3%;
  
  @media only screen and (max-width: 960px){
-  margin-top: 25%;
-  margin-left: 57%;
-  /* justify-content: space-between; */
   width:50vw;
   display: flex;
-  /* align-content: space-between; */
- }
 
+ }
+ `
+
+export const RegisterOrgContent = styled.div` 
+height: inherit;
+width: 30vw;
+padding: 5%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{  
+    margin-top: 1%;
+    font-size: 12px;
+    text-align: center; 
+}
+
+@media screen and (max-width: 960px){
+    width: inherit;
+
+}
 `
 
+export const RegisterOrgImage = styled.div`
+height: inherit;
+width: 30vw;
+border-radius: 0 10px 10px 0;
+background: url(${youngman}) ;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+object-fit: center;
 
-
-
-
-
-export const Image = styled.div`
-/* background-color: white; */
-margin: 5%;
- img{
-  
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
- }
- 
-  
-  @media only screen and (max-width: 960px){
-    width: 85vw;
-    /* display: block; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    margin-top: 25%;
-
-  } 
-
+@media screen and (max-width: 960px){
+    display: none;
+}
 `
-
-export const Create = styled.p`
-  /* align-items: center; */
-  /* width: 150vw; */
-  /* margin-left: 20%; */
-  /* margin-top: 2%; */
-  font-size: 20px;
-
- @media only screen and (max-width: 960px){
-  /* width: 100vw; */
-  font-size: 18px;
-  text-align: center;
-    
-    margin-left: 5%;
-   
- }
-
-`
-
-
-
-
 
 export const SocialIconsHolder = styled.div`
-  
-  border: 1px solid #d9d9d9;
+ border: 1px solid #d9d9d9;
   border-radius: 50px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  
-  
 
+  img{
+      width: 20px;
+      height:20px;
+    }
+    
+  
 
   @media only screen and (max-width: 960px) {
     display: flex;
-    /* align-items: center; */
-    /* justify-content: space-between; */
     border: 1px solid #d9d9d9;
     border-radius: 50%;
     width: 40px;
@@ -152,238 +110,147 @@ export const SocialIconsHolder = styled.div`
     flex-direction: column;
 
     img{
-      width: 25px;
-      height:25px;
+      width: 20px;
+      height:20px;
     }
-    /* padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%; */
-
     
-  }
+}
+`
+
+export const Media = styled.div`
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-left: 15%;
+ width: 16vw;
+ 
+ @media only screen and (max-width: 960px){
+   justify-content: space-between;
+   width: 45vw;
+   margin-top: 5%;
+   margin-left: 27%;
+ }
+  
 `
 
 export const Div = styled.div`
- margin: 5%;
+ margin-top: 10%;
  display: flex;
  align-items: center;
- width: 30vw;
- padding: 2%;
- /* margin-left: 5%; */
-/* margin-right: 15%; */
+ width: 20vw;
 
-@media only screen and (max-width:960px){
-  width: 80vw;
+ @media only screen and (max-width: 960px){
+  width: 90vw;
+  margin-top: 5%;
+ }
 
-}
 
 `
 
-
-
-
-export const Horizontal = styled.div`
- width: 40vw;
+export const Horizontal= styled.div`
+   width: 20vw;
  
- height: 0.2vh;
- background-color: #C4C4C4;
-  
- @media only screen and (max-width:960px){
-   width: 50vw;
+  height: 0.2vh;
+  background-color: #C4C4C4;
    
- } 
 
+   
+
+   @media only screen and (max-width: 960px){
+    width: 100vw;
+    margin-left: 35%;
+
+   }
 `
 
 export const Or = styled.div`
-width: 50vw;
-color: #C4C4C4;
-padding-left: 5%;
-padding-right: 3%;
+ width: 10vw;
 
 
-@media only screen and (max-width:960px){
-  width: 90vw;
+@media only screen and (max-width: 960px){
   padding: 5%;
-  /* color: blue; */
+  margin-left: 25%;
+  width: 40vw;
 
+  
 }
 
 
 `
-
-
-
-export const Form1 = styled.div`
-
- width: 31vw;
- /* height: inherit; */
- margin-left: 5%;
- border-radius: 5px;
- z-index: 1;
- justify-content: center;
- /* padding: 5%; */
-
- div{
-    
-        
- }
-
- input{
- width: 25vw;
-  /* height: 5vh; */
-  /* border-radius: 5px; */
-  /* border: 1px solid #d9d9d9; */
-  height: inherit;
-  width: 25vw;
-  border: none;
-  outline: transparent;
-  padding: 1%;
+export const Form = styled.div`
+  margin-top: 15%;
+  /* border: 0.5px solid #000000;border: 0.5px solid #000000; */
+  border-radius: 5px;
+  padding-top: 5%;
+  text-align: left;
+  margin: 5%;
   
-
- }
-
- p{
-  color: #C4C4C4;
-  margin-top: 2%;
-  /* padding-bottom: 0.2%; */
-
- }
-
- @media only screen and (max-width: 960px){
-  margin-left: 7%;
-  /* margin-top: 15%; */
-
-  input{
-   width:75vw;
-   height: 5vh;
-   
-  } 
 
   p{
-    padding-top: 5%;
+    margin-top: 5%;
   }
-
- }
-
-
-`
-
-export const Name = styled.div`
-    height: 7vh;
-    outline: 1px solid #C4C4C4;
-    border-radius: 4px;
-    margin-top: 2%;
-    width: 25vw;
-
-    @media only screen and (max-width: 960px){
-        width: 80vw;
-        padding: 5%;  
-        
-    }
-
-
-`
-
-export const Mail = styled.div`
-    display: flex;
-    height: 7vh;
-    outline: 1px solid #C4C4C4;
-    border-radius: 4px;
-    margin-top: 2%;
-    width: 25vw;
-
- @media only screen and (max-width: 960px){
-  width: 80vw;
-  padding: 5%;
- }
   
-  
-`
 
-export const Password = styled.div`
-    display: flex;
-    height: 7vh;
-    outline: 1px solid #C4C4C4;
-    border-radius: 4px;
-    margin-top: 2%;
-    width: 25vw;
 
   @media only screen and (max-width: 960px){
-    width:80vw;
-    padding: 5%;
-  }  
-
-`
-
-export const Forgot =styled.div`
-
-    margin-right: 19%;
-    text-align: right;
-    margin-top: 2%;
-
-
-    a{
-        color: blue;
-        /* text-decoration: none; */
-        
-    }
-
-
-
-@media only screen and (max-width:960px){
-    /* margin-right: %; */
-    display: flex;
-    width: 98vw;
-    font-size: 15px;
+    display: block;
     
-    a{
-        color: blue;
-        text-decoration: none;
-        text-align: right;
-        margin-left: 53%;
-        margin-top: 2%;
-        /* width: 20vw; */
+ p{
+      margin-bottom: 4px;
+    
     }
+    
+  }
+`
+export const P = styled.div`
+margin-left: 8%;
+
+@media only screen and (max-width: 960px){
+  width: 80vw;
+  padding-left: 15%;
 }
 
-
 `
 
-export const Wont = styled.div`
-
+export const FormInput = styled.input`
+  border-radius: 5px;
+  outline: none;
+  border: 0.5px solid #000000 ;
+  width:90%;
+  height:5vh;
+  padding: 3%;
+  
+  @media screen and (max-width: 960px) {
+    width: 110vw;
+    height: 8vh;
+  }
+`
+export const Input = styled.div`
+    border-radius: 5px;
+    display: flex;
+    border: 0.5px solid #000000 ;
+    height: 5vh;
+    outline: none;
     margin-top: 2%;
-    margin-right: 5%;
-    margin-left: 10%;
-    color: #C4C4C4;
-    
-
-    a{
-        color: blue;
+    width: 90%;
+   
+    input{
+      border: none;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      padding: 2%;
     }
-
-
-@media only screen and (max-width:960px){
-    /* text-align: center; */
-    margin-top: 5%;
-    margin-left: 35%;
-    width:85vw;
-    font-size: 12px;
-    color: #C4C4C4;
     
-
-    a{
-        text-decoration: none;
-    }
-} 
-
-
-
+  @media only screen and (max-width: 960px){
+    width:110vw;
+    height: 8vh;
+    padding: 5%;
+  }  
 `
 
-export const Button = styled.button`
-  width: 26vw;
+
+export const Button = styled.div`
+  width: 19vw;
   height: 5vh;
   background-color: #FF2957;
   color: white;
@@ -391,31 +258,18 @@ export const Button = styled.button`
   outline: none;
   border-radius: 5px;
   font-size: 18px;
-  margin-top: 5%;
+  margin-top: 10%;
   cursor: pointer;
+  padding-left: 35%;
+  padding-top: 2%;
   
   @media only screen and (max-width: 960px){
-    width: 75vw;
-    /* margin-right: 30%; */
-    margin-left: 13%;
-    margin-top: 45%;
-
+    width: 110vw;
+    height: 7vh;
+    padding-left: 43%;
+    padding-top: 3%;
   }
+ 
 `
 
-export const Picture = styled.div`
-width: 30vw;
-height: inherit;
-border-radius: 0 10px 10px 0;
-background-color: blue;
-background: url(${image});
-background-size: 472px 650px;
-background-repeat: no-repeat;
-background-position: center; 
-
- @media only screen and (max-width: 960px){
-
-  background: none;
- }
-
-`
+  

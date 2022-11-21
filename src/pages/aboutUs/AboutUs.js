@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '../../components/footer/Footer'
-import { TCBody, TCHead, WhatsApp } from '../../globalStyles'
+import { WhatsApp } from '../../globalStyles'
 import { ASContent, ASContentSection, ASInner, ASInnerImg, 
         ASImage, HeroSection, TCContainer } from './AboutUsStyled'
 import whatsappIcon from '../../images/whatsapp-symbol-logo-svgrepo-com.svg'
@@ -24,11 +24,14 @@ const AboutUs = () => {
       <ASContentSection>
         <ASContent>
         <div>
-          <p style={{fontSize:'24px'}}>Our story</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Vitae imperdiet amet sed at aliquam blandit mi, ipsum. 
-            Quis pulvinar vel integer aliquet. Faucibus neque, 
-            ridiculus diam vulputate faucibus dui sollicitudin arcu. 
+          <p style={{fontSize:'26px'}}>Our story</p>
+          <p>More than a product, tech platform, or system, 
+            our story is centered on raising a new generation of men and women, 
+            intentional about telling their own stories ceaselessly. 
+            Tales of cultural authenticity, innovation, stability, and value. <br/>
+            A self sufficient society where individuals and organizations do not 
+            need to look without in search of sustainability; but look within, 
+            as they unearth gold mines of opportunities.
           </p>
             </div>
         </ASContent>
@@ -40,9 +43,10 @@ const AboutUs = () => {
             <img src={Point} alt='' height={'30px'} width={'30px'} />
           </ASInnerImg>
             <div>
-              <p>Connecting People</p>
+              <p style={{fontSize:'18px'}}>Connecting People</p>
               <p style={{fontSize:'14px'}}>We believe in a universal bond of sharing that connects all humanity. 
-                A society where everyone has a sense of belonging.</p>
+                A society where everyone has a sense of belonging.
+                </p>
             </div>
           </ASInner>
           <ASInner>
@@ -50,17 +54,18 @@ const AboutUs = () => {
           <img src={Point} alt='' height={'30px'} width={'30px'} />
           </ASInnerImg>
             <div>
-              <p>Capturing Value</p>
+              <p style={{fontSize:'18px'}}>Capturing Value</p>
               <p style={{fontSize:'14px'}}>Be it contributing content, volunteering ideas, or selling products and services, 
-                the best customers co-lead companies to the end that value is created and sustained.</p>
+                the best customers co-lead companies to the end that value is created and sustained.
+                </p>
             </div>
           </ASInner>
           <ASInner>
           <ASInnerImg>
             <img src={Point} alt='' height={'30px'} width={'30px'} />
-            </ASInnerImg>
+          </ASInnerImg>
             <div>
-              <p>Fulfilling Memories</p>
+              <p style={{fontSize:'18px'}}>Fulfilling Memories</p>
               <p style={{fontSize:'14px'}}>Today’s customers want more than products, features or benefits. They want meaning. 
                 They want creative control over their life stories as they mark milestones that 
                 acknowledge the past, reflect the present and shape future outcomes.</p>
@@ -75,18 +80,10 @@ const AboutUs = () => {
        <ASContentSection>
         <ASContent>
           <div>
-        <p style={{fontSize:'24px'}}>Our Mission</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Vitae imperdiet amet sed at aliquam blandit mi, ipsum. 
-            Quis pulvinar vel integer aliquet. Faucibus neque, 
-            ridiculus diam vulputate faucibus dui sollicitudin arcu. 
-            Quis commodo aliquet arcu adipiscing enim justo, facilisis. 
-            Proin fermentum massa, aliquet egestas vitae erat. 
-            Velit, volutpat rhoncus condimentum mauris habitasse 
-            amet vitae gravida integer. Et pellentesque augue a ullamcorper 
-            pellentesque eleifend nibh a. 
-            Tempus pellentesque amet nec diam eu leo pellentesque velit. 
-            Interdum eget tincidunt nunc netus eget mattis sed elit nisl.</p>
+        <p style={{fontSize:'26px'}}>Our Mission</p>
+          <p>To be Africa's event intelligence system, 
+            enabling event stakeholders to achieve set goals.
+        </p>
             </div>
         </ASContent>
         <ASImage img={bulb}/>
@@ -96,18 +93,8 @@ const AboutUs = () => {
       <ASImage img={businessMan}/>
         <ASContent>
           <div>
-        <p style={{fontSize:'24px'}}>Our Vision</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Vitae imperdiet amet sed at aliquam blandit mi, ipsum. 
-            Quis pulvinar vel integer aliquet. Faucibus neque, 
-            ridiculus diam vulputate faucibus dui sollicitudin arcu. 
-            Quis commodo aliquet arcu adipiscing enim justo, facilisis. 
-            Proin fermentum massa, aliquet egestas vitae erat. 
-            Velit, volutpat rhoncus condimentum mauris habitasse 
-            amet vitae gravida integer. Et pellentesque augue a ullamcorper 
-            pellentesque eleifend nibh a. 
-            Tempus pellentesque amet nec diam eu leo pellentesque velit. 
-            Interdum eget tincidunt nunc netus eget mattis sed elit nisl.</p>
+        <p style={{fontSize:'26px'}}>Our Vision</p>
+          <p>Connecting People || Creating Memories || Capturing Value</p>
             </div>
         </ASContent>
       </ASContentSection>
