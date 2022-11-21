@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const EventCards = styled.div`
     box-sizing: border-box;
     width: 20vw;
-    height: 70vh;
+    height: 60vh;
     background-color: #fff;
     border: 1px solid #D9D9D9;
     border-radius: 3px;

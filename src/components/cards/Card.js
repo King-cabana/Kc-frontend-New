@@ -6,25 +6,35 @@ import { EventCards,
          EventDetails, 
          EventOrganizer, 
          DateAndTime } from './CardStyled'
-import Image from '../../images/people.jpg'
+// import Image from '../../images/people.jpg'
+import data from '../../data'
+
 
 const Card = () => {
+
+  
   return (
-    <EventCards>
-    <ImageHolder>
-      <img src={Image} alt='' />
-    </ImageHolder>
-    <CardContentHolder>
-      <EventHeader>HOD Cup</EventHeader>
-      <EventOrganizer>Skyline Properties</EventOrganizer>
-      <DateAndTime>15 May 2020 9:30 am</DateAndTime>
-      <EventDetails>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-        Velit officia consequat duis enim velit mollit. 
-        Exercitation veniam consequat sunt nostrud amet.
-      </EventDetails>
     
-    </CardContentHolder>
-      
+    <EventCards>
+      {data.cards.map((cards) => (
+          // <div key={cards.id}>
+          <>
+          <ImageHolder>
+          <img src={cards.img} alt={cards.name} />
+          </ImageHolder>
+          
+          <CardContentHolder>
+            <EventHeader>
+              {cards.title}
+            </EventHeader>
+            <EventOrganizer>{cards.subTitle}</EventOrganizer>
+            <DateAndTime>{cards.time}</DateAndTime>
+            <EventDetails>{cards.details}</EventDetails>
+          </CardContentHolder>
+          </>
+          // </div>
+      ))
+      }
   </EventCards>  
   )
 }
